@@ -25,6 +25,7 @@ Optional
 --------
  * [OpenGRM](http://www.openfst.org/twiki/bin/view/GRM/NGramLibrary) -- For running OpenGRM comparison
  * [python 2.7+](http://www.python.org/getit/) -- For running OpenGRM comparison
+ * [SRILM](http://www.speech.sri.com/projects/srilm/) -- For running SRILM comparison
 
 Compilation
 -----------
