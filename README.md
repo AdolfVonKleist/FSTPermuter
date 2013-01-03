@@ -70,6 +70,12 @@ The lattice-based approach also supports n-best results.
        30.1492(log10: -13.0936) he goes to the park <unk>
        31.4548(log10: -13.6606) he goes to <unk> the park
 
+#### Heuristic Pruning
+The `--thresh` parameter can be used to heuristically prune the intermediate permutation lattice.
+This modifies the order in which the component FSAs are composed and prunes the intermediate lattice
+prior to filtering all permutations.  This can potentially make larger word lists more tractable at
+the expense of exactness. 
+
 ### Compare
 In order to verify the log-probability scores computed by the utility, two scripts are provided.
 

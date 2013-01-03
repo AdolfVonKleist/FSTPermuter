@@ -76,7 +76,52 @@ void phi_compose( VectorFst<StdArc>* lm, Fst<StdArc>* sent, VectorFst<StdArc>* r
   return;
 }
 
-VectorFst<StdArc> lattice_shortest( VectorFst<StdArc>* lm, vector<int>* tokens, bool use_phi, int nbest ){
+VectorFst<StdArc> lattice_heuristic_shortest( VectorFst<StdArc>* lm,
+					      vector<int>* tokens, 
+					      bool use_phi, int nbest,
+					      double threshold ){
+  /* 
+     Compute the most probable permutation of the input word list.
+     This version uses the PermutationLattice class, but modifies
+     the composition order.  This permits the application of 
+     heuristic pruning of the intermediate lattice.  This is 
+     inexact but makes it somewhat tractable to handle some larger
+     lists of words. Note: slower for shorter lists!
+  */
+
+  PermutationLattice pl( tokens, false );
+  pl.generate_component_fsts( );
+
+  //Compose the skeleton FSA with the LM instead
+  // of building the complete lattice. 
+  VectorFst<StdArc> pfst;
+  if( use_phi==true )
+    phi_compose( lm, &pl.component_fsts[0], &pfst );
+  else
+    pfst = VectorFst<StdArc>(ComposeFst<StdArc>(*lm, pl.component_fsts[0]));
+
+  //Now prune the intermediate result using the 
+  // threshold parameter value
+  Prune(&pfst, threshold);
+
+  //Now apply the remaining enforcement FSAs
+  for( size_t i=1; i<pl.component_fsts.size(); i++ )
+    pfst = VectorFst<StdArc>(ComposeFst<StdArc>(pfst, pl.component_fsts[i]));
+
+  //Finally compute the shortest path through the result
+  //NOTE: depending on the value of the threshold parameter
+  //      the final result might NOT include the best permutation
+  //      because it may have been pruned out.
+  VectorFst<StdArc> shortest;
+  ShortestPath(pfst, &shortest, nbest);
+  shortest.SetInputSymbols(lm->InputSymbols());
+  return shortest;
+}
+
+
+VectorFst<StdArc> lattice_shortest( VectorFst<StdArc>* lm, 
+				    vector<int>* tokens, 
+				    bool use_phi, int nbest ){
   /*
     Compute the most probable permutation of the input word list.  
     This version uses the PermutationLattice class.  This approach builds up
@@ -240,6 +285,7 @@ DEFINE_bool(  use_lat,    true,  "Use fst-based lattice approach.");
 DEFINE_bool( use_nsec,    true,  "Display timing info in nsecs.");
 DEFINE_int32(   nbest,       1,  "Display nbest.  N>1 currently requires --use_lat=true.");
 DEFINE_int32( verbose,       1,  "Verbosity level.");
+DEFINE_double( thresh,      -1,  "Pruning threshold.");
 DEFINE_string(  ofile,      "",  "Output file for writing. (STDOUT)");
 
 int main( int argc, char* argv[] ){
@@ -251,6 +297,7 @@ int main( int argc, char* argv[] ){
     cout << "You must supply an ARPA format lm to --lm for conversion!" << endl;
     return 0;
   }
+
   if( FLAGS_use_lat==false && FLAGS_nbest>1 ){
     cout << "--nbest with N>1 currently requires --use_lat=true." << endl;
     return 0;
@@ -258,7 +305,10 @@ int main( int argc, char* argv[] ){
 
   cerr << "Loading WFSA-format LM..." << endl;
   VectorFst<StdArc>* lm = VectorFst<StdArc>::Read(FLAGS_lm);
-
+  if( !lm ){
+    cout << "Failed to open lm: " << FLAGS_lm << endl;
+    return 0;
+  }
   cerr << "Computing best permutation..." << endl;
   SymbolTable* isyms = (SymbolTable*)lm->InputSymbols();
   //Get the <unk> ID, else just map to <eps>
@@ -279,16 +329,27 @@ int main( int argc, char* argv[] ){
 
   start = get_time();
   VectorFst<StdArc> best_path;
-  if( FLAGS_use_lat )
-    best_path = lattice_shortest( lm, &tokens, FLAGS_use_phi, FLAGS_nbest );
-  else
+  if( FLAGS_use_lat ){
+    if( FLAGS_thresh == -1.0 ){
+      best_path = lattice_shortest( lm, &tokens, FLAGS_use_phi, FLAGS_nbest );
+    }else{
+      best_path = lattice_heuristic_shortest( lm, &tokens, FLAGS_use_phi, 
+					      FLAGS_nbest, FLAGS_thresh );
+    }
+  }else{
     best_path = std_shortest( lm, &tokens, FLAGS_use_phi );
+  }
   end = get_time();
   elapsed = diff(start, end);
   cout << "Time(" << (FLAGS_use_nsec==true ? "nsec" : "sec") << "): " 
        << (FLAGS_use_nsec ? elapsed.tv_nsec : elapsed.tv_sec) << endl;
 
-  print_path( &best_path );
+  if(  best_path.NumStates()==0 ){
+    cout << "No valid paths survived.  Try increasing --thresh value?" << endl;
+    return 0;
+  }else{
+    print_path( &best_path );
+  }
 
   return 1;
 }
