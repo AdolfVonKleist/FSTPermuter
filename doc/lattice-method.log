@@ -1,0 +1,691 @@
+This is XeTeX, Version 3.1415926-2.2-0.9997.4 (TeX Live 2010) (format=xelatex 2011.1.12)  2 JAN 2013 21:00
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**lattice-method.tex
+(./lattice-method.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/07/13 v5.5 Page Geometry
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@indent=\dimen116
+\caption@parindent=\dimen117
+\caption@hangindent=\dimen118
+)
+\c@ContinuedFloat=\count91
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count92
+\c@subtable=\count93
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2010/07/14 v2.0b Advanced font selection for XeLaTeX/LuaLaTeX
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/expl3.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3names.sty
+Package: l3names 2010/07/11 v1981 L3 Experimental Naming Scheme for TeX Primiti
+ves
+)
+Package: expl3 2010/07/13 v1982 L3 Experimental code bundle wrapper
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count94
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3basics.sty
+Package: l3basics 2010/06/07 v1942 L3 Experimental basic definitions
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3expan.sty
+Package: l3expan 2010/06/10 v1948 L3 Experimental Argument Expansion module
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3tl.sty
+Package: l3tl 2010/05/22 v1919 L3 Experimental Token Lists
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3intexpr.sty
+Package: l3intexpr 2010/06/15 v1957 L3 Integer Expressions
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3quark.sty
+Package: l3quark 2010/03/21 v1853 L3 Experimental Quark Commands
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3seq.sty
+Package: l3seq 2010/03/29 v1879 L3 Experimental sequences and stacks
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3toks.sty
+Package: l3toks 2010/05/25 v1933 L3 Experimental Token Registers
+\l_tmpb_toks=\toks17
+\l_tmpc_toks=\toks18
+\g_tmpa_toks=\toks19
+\g_tmpb_toks=\toks20
+\g_tmpc_toks=\toks21
+\c_empty_toks=\toks22
+\l_tl_replace_toks=\toks23
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3int.sty
+Package: l3int 2010/05/25 v1933 L3 Experimental Integer module
+\l_tmpa_int=\count95
+\l_tmpb_int=\count96
+\l_tmpc_int=\count97
+\g_tmpa_int=\count98
+\g_tmpb_int=\count99
+\c_max_int=\count100
+\g_tl_inline_level_int=\count101
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3prg.sty
+Package: l3prg 2010/03/21 v1853 L3 Experimental control structures
+\g_prg_inline_level_int=\count102
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3clist.sty
+Package: l3clist 2010/03/29 v1878 L3 Experimental comma separated lists
+\g_clist_inline_level_int=\count103
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3token.sty
+Package: l3token 2010/04/11 v1890 L3 Experimental token investigation and manip
+ulation
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3prop.sty
+Package: l3prop 2010/03/21 v1857 L3 Experimental Property Lists
+\g_prop_inline_level_int=\count104
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3msg.sty
+Package: l3msg 2010/03/23 v1866 L3 Experimental LaTeX Messages module
+\l_msg_redirect_classes_prop=\toks24
+\l_msg_redirect_names_prop=\toks25
+\l_msg_redirect_fatal_prop=\toks26
+\l_msg_redirect_error_prop=\toks27
+\l_msg_redirect_warning_prop=\toks28
+\l_msg_redirect_info_prop=\toks29
+\l_msg_redirect_log_prop=\toks30
+\l_msg_redirect_trace_prop=\toks31
+\l_msg_redirect_none_prop=\toks32
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3io.sty
+Package: l3io 2010/05/22 v1923 L3 Experimental i/o module
+\g_iow_streams_prop=\toks33
+\g_ior_streams_prop=\toks34
+\l_iow_stream_int=\count105
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3skip.sty
+Package: l3skip 2010/05/25 v1933 L3 Experimental skip registers
+\l_tmpa_skip=\skip43
+\l_tmpb_skip=\skip44
+\l_tmpc_skip=\skip45
+\g_tmpa_skip=\skip46
+\g_tmpb_skip=\skip47
+\l_tmpa_dim=\dimen119
+\l_tmpb_dim=\dimen120
+\l_tmpc_dim=\dimen121
+\l_tmpd_dim=\dimen122
+\g_tmpa_dim=\dimen123
+\g_tmpb_dim=\dimen124
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3box.sty
+Package: l3box 2010/05/22 v1919 L3 Experimental Box module
+\l_tmpb_box=\box26
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3keyval.sty
+Package: l3keyval 2010/04/11 v1890 L3 Experimental keyval processing
+\l_KV_level_int=\count106
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3keys.sty
+Package: l3keys 2010/05/24 v1931 L3 Experimental key-value support
+\l_keys_choice_int=\count107
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3precom.sty
+Package: l3precom 2010/02/09 v1793 L3 Experimental precompilation module
+\g_gen_sym_int=\count108
+\g_ggen_sym_int=\count109
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3xref.sty
+Package: l3xref 2010/02/09 v1786 L3 Experimental cross referencing
+\g_xref_all_curr_immediate_fields_prop=\toks35
+\g_xref_all_curr_deferred_fields_prop=\toks36
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3file.sty
+Package: l3file 2010/03/21 v1853 L3 Experimental file loading
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3fp.sty
+Package: l3fp 2010/07/08 v1979 L3 Experimental floating-point operations
+\l_fp_input_a_integer_int=\count110
+\l_fp_input_a_decimal_int=\count111
+\l_fp_input_b_integer_int=\count112
+\l_fp_input_b_decimal_int=\count113
+\l_fp_input_a_sign_int=\count114
+\l_fp_input_b_sign_int=\count115
+\l_fp_split_sign_int=\count116
+\l_fp_mul_a_i_int=\count117
+\l_fp_mul_a_ii_int=\count118
+\l_fp_mul_a_iii_int=\count119
+\l_fp_mul_a_iv_int=\count120
+\l_fp_mul_a_v_int=\count121
+\l_fp_mul_a_vi_int=\count122
+\l_fp_mul_b_i_int=\count123
+\l_fp_mul_b_ii_int=\count124
+\l_fp_mul_b_iii_int=\count125
+\l_fp_mul_b_iv_int=\count126
+\l_fp_mul_b_v_int=\count127
+\l_fp_mul_b_vi_int=\count128
+\l_fp_mul_output_int=\count129
+\l_fp_div_count_int=\count130
+\l_fp_div_offset_int=\count131
+\l_fp_output_sign_int=\count132
+\l_fp_output_integer_int=\count133
+\l_fp_output_decimal_int=\count134
+\l_fp_round_discard_int=\count135
+\l_fp_round_position_int=\count136
+\l_fp_tmp_int=\count137
+\c_one_hundred_million=\count138
+\c_one_thousand_million=\count139
+\l_fp_tmp_dim=\dimen125
+\l_fp_round_precision_int=\count140
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count141
+\calc@Bcount=\count142
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count143
+\calc@Cskip=\skip50
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/xpackages/xbase/xparse.sty
+Package: xparse 2010/05/23 v1927 Generic document command parser
+\c_xparse_shorthands_prop=\toks37
+\l_xparse_m_args_int=\count144
+\l_xparse_mandatory_args_int=\count145
+\l_xparse_processor_int=\count146
+\l_xparse_total_args_int=\count147
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/kastrup/binhex.tex)
+\c@zf@newff=\count148
+\c@zf@index=\count149
+\c@zf@script=\count150
+\c@zf@language=\count151
+\l_fontspec_strnum_int=\count152
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
+\XKV@depth=\count153
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Package: fontspec-patches 2010/07/14 v2.0b Advanced font selection for XeLaTeX/
+LuaLaTeX
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+)
+LaTeX Info: Redefining \em on input line 23.
+LaTeX Info: Redefining \emph on input line 27.
+LaTeX Info: Redefining \- on input line 30.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1g Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+ LaTeX Info: Defining document command \fontspec
+(LaTeX)  with arg. spec. 'O{}m' on line 264.
+
+ LaTeX Info: Defining document command \setmainfont
+(LaTeX)  with arg. spec. 'O{}m' on line 268.
+
+ LaTeX Info: Defining document command \setsansfont
+(LaTeX)  with arg. spec. 'O{}m' on line 272.
+
+ LaTeX Info: Defining document command \setmonofont
+(LaTeX)  with arg. spec. 'O{}m' on line 276.
+
+ LaTeX Info: Defining document command \setmathrm
+(LaTeX)  with arg. spec. 'O{}m' on line 280.
+
+ LaTeX Info: Defining document command \setboldmathrm
+(LaTeX)  with arg. spec. 'O{}m' on line 283.
+
+ LaTeX Info: Defining document command \setmathsf
+(LaTeX)  with arg. spec. 'O{}m' on line 286.
+
+ LaTeX Info: Defining document command \setmathtt
+(LaTeX)  with arg. spec. 'O{}m' on line 289.
+
+ LaTeX Info: Defining document command \newfontfamily
+(LaTeX)  with arg. spec. 'mO{}m' on line 304.
+
+ LaTeX Info: Defining document command \newfontface
+(LaTeX)  with arg. spec. 'mO{}m' on line 307.
+
+ LaTeX Info: Defining document command \defaultfontfeatures
+(LaTeX)  with arg. spec. 'm' on line 308.
+
+ LaTeX Info: Defining document command \addfontfeatures
+(LaTeX)  with arg. spec. 'm' on line 325.
+
+ LaTeX Info: Defining document command \newfontfeature
+(LaTeX)  with arg. spec. 'mm' on line 334.
+
+ LaTeX Info: Defining document command \newAATfeature
+(LaTeX)  with arg. spec. 'mmmm' on line 343.
+
+ LaTeX Info: Defining document command \newICUfeature
+(LaTeX)  with arg. spec. 'mmm' on line 352.
+
+ LaTeX Info: Defining document command \aliasfontfeature
+(LaTeX)  with arg. spec. 'mm' on line 354.
+
+ LaTeX Info: Defining document command \aliasfontfeatureoption
+(LaTeX)  with arg. spec. 'mmm' on line 357.
+
+ LaTeX Info: Defining document command \newfontscript
+(LaTeX)  with arg. spec. 'mm' on line 362.
+
+ LaTeX Info: Defining document command \newfontlanguage
+(LaTeX)  with arg. spec. 'mm' on line 379.
+
+ LaTeX Info: Defining document command \DeclareFontsExtensions
+(LaTeX)  with arg. spec. 'm' on line 395.
+
+\c@fontspec_tmp_int=\count154
+LaTeX Info: Redefining \itshape on input line 1903.
+LaTeX Info: Redefining \slshape on input line 1907.
+LaTeX Info: Redefining \scshape on input line 1911.
+LaTeX Info: Redefining \upshape on input line 1915.
+
+fontspec.cfg loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fontspec/fontspec.cfg))
+(/usr/local/texlive/2010/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty
+Package: xltxtra 2010/06/03 v0.5d Improvements for the "XeLaTeX" format
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/local/texlive/2010/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2008/02/08 v0.91 provides access to latin accents and many o
+ther characters in Unicode lower plane
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks40
+\xl@@everylogo=\toks41
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+LaTeX Info: Redefining \textsubscript on input line 62.
+LaTeX Info: Redefining \textsuperscript on input line 64.
+\xxt@tempbox=\box27
+)
+\c@zf@famc@Hoefler Text=\count155
+ fontspec Info: Defining font family for 'Hoefler Text' with options [Mapping=t
+ex-text,Mapping=tex-text].
+
+Package fontspec Info: Defining shape m/n with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape m/sc with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape bx/n with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape bx/sc with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape m/it with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape m/si with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape bx/it with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+Package fontspec Info: Defining shape bx/si with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+ fontspec Info: Arial scale = 0.81873.
+
+\c@zf@famc@Arial=\count156
+ fontspec Info: Defining font family for 'Arial' with options [Mapping=tex-text
+,Scale=MatchLowercase,Mapping=tex-text].
+
+ fontspec Info: Arial scale = 0.81873.
+
+Package fontspec Info: Defining shape m/n with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+ fontspec Info: Arial/B scale = 0.81873.
+
+Package fontspec Info: Defining shape bx/n with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+ fontspec Info: Arial/I scale = 0.81873.
+
+Package fontspec Info: Defining shape m/it with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+ fontspec Info: Arial/BI scale = 0.81873.
+
+Package fontspec Info: Defining shape bx/it with raw font features:
+(fontspec)             mapping=tex-text;mapping=tex-text;.
+\c@zf@famc@Times=\count157
+ fontspec Info: Defining font family for 'Times' with options [Mapping=tex-text
+,Scale=.95].
+
+Package fontspec Info: Defining shape m/n with raw font features:
+(fontspec)             mapping=tex-text;.
+Package fontspec Info: Defining shape bx/n with raw font features:
+(fontspec)             mapping=tex-text;.
+Package fontspec Info: Defining shape m/it with raw font features:
+(fontspec)             mapping=tex-text;.
+Package fontspec Info: Defining shape bx/it with raw font features:
+(fontspec)             mapping=tex-text;.
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 27.
+ fontspec Info: Consolas scale = 0.869.
+
+\c@zf@famc@Consolas=\count158
+ fontspec Info: Defining font family for 'Consolas' with options [Mapping=tex-t
+ext,Scale=MatchLowercase].
+
+ fontspec Info: Consolas scale = 0.869.
+
+Package fontspec Info: Defining shape m/n with raw font features:
+(fontspec)             mapping=tex-text;.
+ fontspec Info: Consolas/B scale = 0.86076.
+
+Package fontspec Info: Defining shape bx/n with raw font features:
+(fontspec)             mapping=tex-text;.
+ fontspec Info: Consolas/I scale = 0.869.
+
+Package fontspec Info: Defining shape m/it with raw font features:
+(fontspec)             mapping=tex-text;.
+ fontspec Info: Consolas/BI scale = 0.86076.
+
+Package fontspec Info: Defining shape bx/it with raw font features:
+(fontspec)             mapping=tex-text;.
+
+(./lattice-method.aux)
+\openout1 = `lattice-method.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 34.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ fontspec Info: Adjusting the maths setup (use [no-math] to avoid this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 34.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 34.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 34.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 34.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 34.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 34.
+LaTeX Font Info:    Redeclaring math accent \check on input line 34.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 34.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 34.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 34.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 34.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/Times(0)/m/n on input line 34.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/Times(0)/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/Times(0)/m/n --> EU1/Times(0)/m/n on input line 34.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  EU1/Times(0)/m/n --> EU1/Times(0)/m/n on input line 34.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/Times(0)/m/it on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/Times(0)/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/Arial(0)/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/Consolas(0)/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/Times(0)/m/n --> EU1/Times(0)/bx/n on input line 34
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU1/Times(0)/m/n --> EU1/Times(0)/bx/n on input line 34
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/Times(0)/bx/it on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/Arial(0)/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/Consolas(0)/bx/n on input line 34.
+
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 19.70294pt on input line 35.
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 13.67995pt on input line 35.
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 16.41594pt on input line 37.
+LaTeX Font Info:    Font shape `EU1/Times(0)/bx/n' will be
+(Font)              scaled to size 16.41594pt on input line 37.
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 38.
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 38.
+LaTeX Font Info:    Font shape `EU1/Consolas(0)/m/n' will be
+(Font)              scaled to size 10.42804pt on input line 39.
+File: cmp0.pdf Graphic file (type QTm)
+
+<use  "cmp0.pdf" >
+File: cmp1.pdf Graphic file (type QTm)
+ <use  "cmp1.pdf" >
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/n' will be
+(Font)              scaled to size 10.40245pt on input line 59.
+LaTeX Font Info:    Font shape `EU1/Consolas(0)/m/n' will be
+(Font)              scaled to size 9.51558pt on input line 59.
+File: cmp2.pdf Graphic file (type QTm)
+ <use  "cmp2.pdf" >
+File: cmp3.pdf Graphic file (type QTm)
+ <use  "cmp3.pdf" >
+File: cascade.pdf Graphic file (type QTm)
+
+<use  "cascade.pdf" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+] [2]
+LaTeX Font Info:    Font shape `EU1/Times(0)/m/it' will be
+(Font)              scaled to size 9.49997pt on input line 109.
+ [3
+
+] (./lattice-method.aux) ) 
+Here is how much of TeX's memory you used:
+ 11886 strings out of 494542
+ 207452 string characters out of 3157455
+ 259705 words of memory out of 3000000
+ 14955 multiletter control sequences out of 15000+200000
+ 11164 words of font info for 78 fonts, out of 3000000 for 9000
+ 669 hyphenation exceptions out of 8191
+ 40i,8n,90p,762b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on lattice-method.pdf (3 pages).
