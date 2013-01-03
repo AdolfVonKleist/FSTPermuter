@@ -17,7 +17,7 @@ OpenGRM or SRILM are also provided for verification purposes.
 
 Requirements
 ------------
- * [OpenFst library](http://www.openfst.org) -- Make sure to compile the extensions: `./configure --enable-compact-fsts --enable-const-fsts --enable-far --enable-lookahead-fsts --enable-pdt`
+ * [OpenFst library](http://www.openfst.org)(v1.3+) -- Make sure to compile the extensions: `./configure --enable-compact-fsts --enable-const-fsts --enable-far --enable-lookahead-fsts --enable-pdt`
  * g++ or comparable compiler
  * OSX or Linux operating
 
